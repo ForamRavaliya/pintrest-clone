@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/PCC.iml" filepath="$PROJECT_DIR$/PCC.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/pintrestClone.iml" filepath="$PROJECT_DIR$/.idea/pintrestClone.iml" />
+>>>>>>> 40586cb12c1cc54690b2497a5b1f95888b179a69
     </modules>
   </component>
 </project>
