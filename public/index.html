@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pinterest Clone</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!-- React yahan render karega -->
+<div id="root"></div>
+<div class="categories">
+    <button onclick="filterPins('all')">All</button>
+    <button onclick="filterPins('nature')">Nature</button>
+    <button onclick="filterPins('food')">Food</button>
+    <button onclick="filterPins('travel')">Travel</button>
+</div>
+
+<div class="pin-grid">
+    <div class="pin-card" data-category="nature">
+        <img src="nature1.jpg" alt="Nature">
+        <img src="images/tree.jpeg">
+    </div>
+    <div class="pin-card" data-category="food">
+        <img src="food1.jpg" alt="Food">
+    </div>
+    <div class="pin-card" data-category="travel">
+        <img src="travel1.jpg" alt="Travel">
+    </div>
+    <div class="pin-card" data-category="nature">
+        <img src="nature2.jpg" alt="Nature">
+    </div>
+</div>
+
+</body>
+<script>
+    function filterPins(category) {
+      const pins = document.querySelectorAll(".pin-card");
+
+      pins.forEach(pin => {
+        if (category === "all" || pin.dataset.category === category) {
+          pin.style.display = "inline-block"; // show
+        } else {
+          pin.style.display = "none"; // hide
+        }
+      });
+    }
+</script>
+
+</html>

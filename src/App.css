@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #fff5f5, #ffe6e6);
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e60023;
+  padding: 12px 20px;
+  color: white;
+}
+.nav-categories {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-categories button {
+  background: white;
+  color: #e60023;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-categories button:hover {
+  background: #ffe6e6;
+}
+
+
+.logo {
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.searchbar {
+  width: 40%;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.nav-buttons button {
+  margin-left: 10px;
+  background: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #e60023;
+}
+.pin-grid {
+  column-count: 4; /* number of columns */
+  column-gap: 20px;
+  padding: 40px;
+  background: linear-gradient(to bottom right, #ffe5e5, #fff0f0);
+}
+
+.pin-card {
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.pin-card img {
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+  transition: 0.3s;
+}
+
+.pin-card:hover {
+  transform: scale(1.02);
+}
+
+
+.pin-card:hover {
+  transform: scale(1.05);
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-container input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.form-container button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background: #e60023;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form-container .link {
+  color: #e60023;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  width: 400px;
+  text-align: center;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+.main-title {
+  text-align: center;
+  margin-top: 25px;
+  color: #b30000;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
